@@ -1,0 +1,2 @@
+# gm over Id technique
+
