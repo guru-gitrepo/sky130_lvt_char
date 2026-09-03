@@ -45,6 +45,6 @@
   |$V_{ov}$  |$\frac{I_D}{W}$  |
   |$\frac{g_m}{c_{gg}}$  |$\frac{I_D}{W}$  |
 
-  7. Repeat the same for other values of L
+  7. Repeat the same for other values of L.
   8. Finally, characterize PMOS in the similar manner.
   
