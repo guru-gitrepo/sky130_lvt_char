@@ -23,7 +23,7 @@
 
   let gm_id = gm / id
   let gm_gds = gm / gds
-  let id_w = id / w_val
+  let id_w = (id / w_val) * 1000000
   let gm_cgg = gm / cgg
 
   plot gm_id vs id_w
@@ -33,5 +33,8 @@
   plot gm_gds vs id_w
   plot vov vs id_w
   plot gm_cgg vs id_w
-
+  
+  set wr_vecnames
+  set wr_singlescale
+  wrdata nmos_lmin_tt.dat vgs id id_w gm_id gm_gds vov gm_cgg
 .endc
