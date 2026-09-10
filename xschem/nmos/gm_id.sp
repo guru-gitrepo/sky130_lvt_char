@@ -37,4 +37,119 @@
   set wr_vecnames
   set wr_singlescale
   wrdata nmos_lmin_tt.dat vgs id id_w gm_id gm_gds vov gm_cgg
+*****************************************************************
+alterparam length=0.3
+reset
+  save all
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vgs]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vth]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgg]
+
+  dc V1 0 1.8 0.01
+
+  let gm = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+  let gds = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+  let id = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+  let vgs = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vgs]
+  let vth = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vth]
+  let vov = vgs - vth
+  let cgg = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgg]
+  let w_val = 1u
+
+  let gm_id = gm / id
+  let gm_gds = gm / gds
+  let id_w = (id / w_val) * 1000000
+  let gm_cgg = gm / cgg
+
+  plot gm_id vs id_w
+  plot gm_gds vs gm_id
+  plot vov vs gm_id
+  plot gm_cgg vs gm_id
+  plot gm_gds vs id_w
+  plot vov vs id_w
+  plot gm_cgg vs id_w
+  
+  set wr_vecnames
+  set wr_singlescale
+  wrdata nmos_l0p3_tt.dat vgs id id_w gm_id gm_gds vov gm_cgg
+*************************************************************
+alterparam length=0.6
+reset
+  save all
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vgs]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vth]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgg]
+
+  dc V1 0 1.8 0.01
+
+  let gm = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+  let gds = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+  let id = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+  let vgs = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vgs]
+  let vth = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vth]
+  let vov = vgs - vth
+  let cgg = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgg]
+  let w_val = 1u
+
+  let gm_id = gm / id
+  let gm_gds = gm / gds
+  let id_w = (id / w_val) * 1000000
+  let gm_cgg = gm / cgg
+
+  plot gm_id vs id_w
+  plot gm_gds vs gm_id
+  plot vov vs gm_id
+  plot gm_cgg vs gm_id
+  plot gm_gds vs id_w
+  plot vov vs id_w
+  plot gm_cgg vs id_w
+  
+  set wr_vecnames
+  set wr_singlescale
+  wrdata nmos_l0p6_tt.dat vgs id id_w gm_id gm_gds vov gm_cgg
+************************************************************
+alterparam length=1
+reset
+  save all
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vgs]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vth]
+  save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgg]
+
+  dc V1 0 1.8 0.01
+
+  let gm = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+  let gds = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+  let id = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+  let vgs = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vgs]
+  let vth = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[vth]
+  let vov = vgs - vth
+  let cgg = @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgg]
+  let w_val = 1u
+
+  let gm_id = gm / id
+  let gm_gds = gm / gds
+  let id_w = (id / w_val) * 1000000
+  let gm_cgg = gm / cgg
+
+  plot gm_id vs id_w
+  plot gm_gds vs gm_id
+  plot vov vs gm_id
+  plot gm_cgg vs gm_id
+  plot gm_gds vs id_w
+  plot vov vs id_w
+  plot gm_cgg vs id_w
+  
+  set wr_vecnames
+  set wr_singlescale
+  wrdata nmos_l1p0_tt.dat vgs id id_w gm_id gm_gds vov gm_cgg
+
 .endc

@@ -18,5 +18,10 @@ set rmargin 3
 set tmargin 2
 set bmargin 4
 
-plot "nmos_lmin_tt.dat" using 4:8 \
-     with lines lw 2 lc rgb "#58a6ff" notitle
+set key right bottom textcolor "#ffffff"
+plot \
+    "nmos_lmin_tt.dat"  using 4:8 with lines lw 2 lc rgb "#58a6ff" title "L = 0.15 µm", \
+    "nmos_l0p3_tt.dat"  using 4:8 with lines lw 2 lc rgb "#d29922" title "L = 0.30 µm", \
+    "nmos_l0p6_tt.dat"  using 4:8 with lines lw 2 lc rgb "#bc8cff" title "L = 0.60 µm", \
+    "nmos_l1p0_tt.dat"  using 4:8 with lines lw 2 lc rgb "#ff7b72" title "L = 1.00 µm"
+
