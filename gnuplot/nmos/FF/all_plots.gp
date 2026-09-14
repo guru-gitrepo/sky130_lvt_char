@@ -64,6 +64,9 @@ plot \
 set title "gm/Cgg vs gm/Id"
 set xlabel "gm/Id (S/S)"
 set ylabel "gm/Cgg (1/s)"
+set logscale y
+set format y "10^{%T}"
+
 
 plot \
     "nmos_lmin_tt.dat" using 5:8 with lines lw 2 lc rgb "#58a6ff" title "L = 0.15 µm", \
@@ -77,6 +80,11 @@ plot \
 set title "gm/gds vs Id/W"
 set xlabel "Id/W (µA/µm)"
 set ylabel "gm/gds"
+unset logscale y
+unset format y
+set logscale x
+set format x "10^{%T}"
+
 
 plot \
     "nmos_lmin_tt.dat" using 4:6 with lines lw 2 lc rgb "#58a6ff" title "L = 0.15 µm", \
@@ -90,7 +98,10 @@ plot \
 set title "Vov vs Id/W"
 set xlabel "Id/W (µA/µm)"
 set ylabel "Vov (V)"
+set logscale x
+set format x "10^{%T}"
 
+set key left top textcolor rgb "#c9d1d9"
 plot \
     "nmos_lmin_tt.dat" using 4:7 with lines lw 2 lc rgb "#58a6ff" title "L = 0.15 µm", \
     "nmos_l0p3_tt.dat"  using 4:7 with lines lw 2 lc rgb "#3fb950" title "L = 0.30 µm", \
@@ -103,6 +114,11 @@ plot \
 set title "gm/Cgg vs Id/W"
 set xlabel "Id/W (µA/µm)"
 set ylabel "gm/Cgg (1/s)"
+set logscale x
+set logscale y
+set format x "10^{%T}"
+set format y "10^{%T}"
+
 
 plot \
     "nmos_lmin_tt.dat" using 4:8 with lines lw 2 lc rgb "#58a6ff" title "L = 0.15 µm", \

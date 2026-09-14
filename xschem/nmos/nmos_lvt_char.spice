@@ -7,7 +7,9 @@ V2 net2 0 0.9
 **** begin user architecture code
 
 
-.include gm_id.sp
+*.include gm_id_tt.sp
+.include gm_id_ss.sp
+*.include gm_id_ff.sp
 
 
 **** end user architecture code
