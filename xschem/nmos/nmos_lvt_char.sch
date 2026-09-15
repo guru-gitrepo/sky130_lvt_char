@@ -37,6 +37,6 @@ C {gnd.sym} 2000 -390 0 0 {name=l4 lab=0}
 C {code_shown.sym} 2120 -410 0 0 {name=Spice only_toplevel=false value=
 "
 *.include gm_id_tt.sp
-.include gm_id_ss.sp
-*.include gm_id_ff.sp
+*.include gm_id_ss.sp
+.include gm_id_ff.sp
 "}

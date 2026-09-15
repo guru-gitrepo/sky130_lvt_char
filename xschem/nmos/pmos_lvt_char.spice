@@ -1,0 +1,18 @@
+** sch_path: /home/guru/Projects/sky130_lvt_char/xschem/pmos/pmos_lvt_char.sch
+**.subckt pmos_lvt_char
+V1 net1 0 0.9
+V2 net2 0 1.8
+XM1 net3 net1 net2 net2 sky130_fd_pr__pfet_01v8_lvt L={length} W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0
++ sd=0 mult=1
+V3 net3 0 0.9
+**** begin user architecture code
+
+
+.include gm_id_tt.sp
+*.include gm_id_ss.sp
+*.include gm_id_ff.sp
+
+
+**** end user architecture code
+**.ends
+.end
