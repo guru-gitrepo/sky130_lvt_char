@@ -67,7 +67,7 @@ set dircolor(devices$) red
 #### if this is set to '1' netlists and simulations will go into a simulation/ folder
 #### inside the directory containing the top level schematic. Default: not set (0)
 # set local_netlist_dir 1
-set netlist_dir $env(HOME)/Projects/sky130_lvt_char/xschem/nmos
+set netlist_dir $env(HOME)/Projects/sky130_lvt_char/xschem/pmos
 ###########################################################################
 #### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
 ###########################################################################

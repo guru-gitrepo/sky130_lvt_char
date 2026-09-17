@@ -8,13 +8,7 @@ V3 net3 0 0.9
 **** begin user architecture code
 
 
-.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
-.param length=0.3
-.control
-op
-print all
-.endc
-*.include gm_id_tt.sp
+.include gm_id_tt.sp
 *.include gm_id_ss.sp
 *.include gm_id_ff.sp
 

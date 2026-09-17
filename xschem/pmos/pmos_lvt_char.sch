@@ -20,7 +20,7 @@ C {vsource.sym} 2000 -420 0 0 {name=V2 value=1.8 savecurrent=false}
 C {gnd.sym} 1850 -260 0 0 {name=l2 lab=0}
 C {gnd.sym} 1680 -290 0 0 {name=l3 lab=0}
 C {gnd.sym} 2000 -390 0 0 {name=l4 lab=0}
-C {code_shown.sym} 2120 -410 0 0 {name=Spice only_toplevel=false value=
+C {code_shown.sym} 2070 -410 0 0 {name=Spice only_toplevel=false value=
 "
 .include gm_id_tt.sp
 *.include gm_id_ss.sp

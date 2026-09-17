@@ -1,12 +1,8 @@
 
 .lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
-
-.param length=0.30
-
+.param length=0.35
 .control
-
   save all
-
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[id]
@@ -14,7 +10,7 @@
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[vth]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[cgg]
 
-  dc V1 1.8 0 0.01
+  dc V1 1.8 0 -0.01
 
   let gm = @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
   let gds = @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]
@@ -46,5 +42,5 @@
   set wr_vecnames
   set wr_singlescale
 
-  wrdata pmos_l0p3_tt.dat vsg id_abs id_w gm_id gm_gds vov gm_cgg
+  wrdata pmos_l0p35_tt.dat vsg id_abs id_w gm_id gm_gds vov gm_cgg
  .endc
