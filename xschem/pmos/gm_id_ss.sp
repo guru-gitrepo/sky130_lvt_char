@@ -1,8 +1,8 @@
 
-.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice ss
 .param length=0.35
 .control
-  set temp=27
+  set temp=80
   save all
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]
@@ -47,7 +47,7 @@
 *****************************************************************
 alterparam length=0.5
 reset
-  set temp=27
+  set temp=80
   save all
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]
@@ -92,7 +92,7 @@ reset
 *****************************************************************
 alterparam length=0.7
 reset
-  set temp=27
+  set temp=80
   save all
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]
@@ -137,7 +137,7 @@ reset
 *****************************************************************
 alterparam length=1
 reset
-  set temp=27
+  set temp=80
   save all
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
   save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]

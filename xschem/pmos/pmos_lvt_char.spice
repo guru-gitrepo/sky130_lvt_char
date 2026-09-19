@@ -8,9 +8,9 @@ V3 net3 0 0.9
 **** begin user architecture code
 
 
-.include gm_id_tt.sp
+*.include gm_id_tt.sp
 *.include gm_id_ss.sp
-*.include gm_id_ff.sp
+.include gm_id_ff.sp
 
 
 **** end user architecture code

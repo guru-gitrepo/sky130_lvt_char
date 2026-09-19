@@ -1,0 +1,23 @@
+
+set terminal svg size 900,600 enhanced font "DejaVu Sans,14"  background rgb "#0d1117"
+set output "vov_vs_gm_id.svg"
+
+set border lc rgb "#ffffff"
+set tics textcolor rgb "#ffffff"
+set xlabel "g_m / I_D  (V⁻¹)" textcolor rgb "#ffffff"
+set ylabel "V_{OV} (V)" textcolor rgb "#ffffff"
+
+set grid lc rgb "#dddddd" lw 0.5
+
+set lmargin 9
+set rmargin 3
+set tmargin 2
+set bmargin 4
+
+set key left top textcolor "#ffffff"
+plot \
+    "pmos_l0p35_tt.dat"  using 5:7 with lines lw 2 lc rgb "#58a6ff" title "L = 0.15 µm", \
+    "pmos_l0p5_tt.dat"  using 5:7 with lines lw 2 lc rgb "#d29922" title "L = 0.30 µm", \
+    "pmos_l0p7_tt.dat"  using 5:7 with lines lw 2 lc rgb "#bc8cff" title "L = 0.60 µm", \
+    "pmos_l1p0_tt.dat"  using 5:7 with lines lw 2 lc rgb "#ff7b72" title "L = 1.00 µm"
+
